@@ -58,4 +58,7 @@ public Action MatchLive(Handle timer) {
 
     for (int i = 0; i < 5; i++)
         PugSetupMessageToAll("%t", "Live");
+
+    // Clear the game's internal stats
+    ServerCommand("_resetgamestats");
 }
